@@ -1,0 +1,26 @@
+SELECT * FROM `cliente`;
+
+SELECT * FROM `produto`;
+
+SELECT * FROM `venda`;
+
+SELECT * FROM `fornecedor`;
+
+SELECT NOME, EMAIL, ID FROM `cliente`;
+
+SELECT * FROM `cliente`
+	WHERE NOME LIKE '%c%';
+
+SELECT ID, DATA, ID_CLIENTE FROM `venda`;
+
+SELECT ID, PRECO FROM `produto`
+	WHERE PRECO > 50;
+	
+SELECT ID, PRECO FROM `produto`
+	WHERE PRECO < 50;
+	
+SELECT ID, PRECO FROM `produto`
+	WHERE (PRECO BETWEEN 20 AND 50) OR (PRECO > 100);
+
+SELECT ENDERECO FROM `fornecedor`
+	WHERE CNPJ LIKE '0%' OR '1%' OR '3%' OR '7%';
